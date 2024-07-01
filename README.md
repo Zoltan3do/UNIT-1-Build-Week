@@ -11,8 +11,8 @@ Questa applicazione web è stata sviluppata per raccogliere feedback, fornire is
 4. **Pagina dei Risultati**: Mostra i risultati dell'esame completato.
 
 ## Struttura del Progetto
-- `index.html`: Pagina di Feedback
-- `welcome.html`: Pagina di Benvenuto all'Esame
+- `feedback.html`: Pagina di Feedback
+- `index.html`: Pagina di Benvenuto all'Esame
 - `test.html`: Pagina del Test
 - `results.html`: Pagina dei Risultati
 - `css/`: Directory contenente i file CSS per il design delle pagine
