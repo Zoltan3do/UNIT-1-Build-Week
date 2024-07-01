@@ -10,36 +10,43 @@
 </head>
 
 <body>
-  <header>
-    <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
+  <header id="header">
+    <div class="container-logo">
+      <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
+    </div>
   </header>
-  <main>
+  <main id="main">
     <div>
-      <section>
-        <h1>Welcome to your exam</h1>
-        <h3>Instruction</h3>
 
+    </div>
+    <div id="container-instructions">
+      <div>
+        <h1 id="titolo">Welcome to <span class="bold">your exam</span></h1>
+        <h3 class="violet">Instruction</h3>
         <p>
           We don't expect most engineers to know the answers to all there
           questions, so don't worry if you're unsure of a few of them.
         </p>
+      </div>
+
+      <div id="container-lista">
         <ul>
           <li>
-            Each question is <b>timed</b> and can only be<b>answered once</b>.
+            Each question is <span class="bold">timed</span> and can only be<span class="bold">answered once</span>.
           </li>
           <li>
             Changing browser tab or opening other windows will
-            <b>invalidate the question</b>.
+            <span class="bold">invalidate the question</span>.
           </li>
-          <li>This exam will take approx. <b>0-5 minutes</b>.</li>
+          <li>This exam will take approx. <span class="bold">0-5 minutes</span>.</li>
         </ul>
-      </section>
+      </div>
     </div>
 
-    <section>
+    <section id="container-form-index">
       <form>
-        <input type="checkbox" required>I promise to answer myself without help from anyone
-        <button type="button">PROCEED</button>
+        <input type="checkbox" required id="policy">I promise to answer myself without help from anyone
+        <button href="test.html" type="button" id="bottone">PROCEED</button>
       </form>
     </section>
   </main>
