@@ -10,37 +10,43 @@
 </head>
 
 <body>
-    <header>
-        <div>
+    <header id="header">
+        <div class="container-logo">
             <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
         </div>
     </header>
 
-    <main>
-        <div>
-            <h1>Results</h1>
+    <main id="main">
+        <div class="title-container">
+            <h1 id="titolo">Results</h1>
             <p>the summury of your answere</p>
         </div>
-        <div>
-            <h2>Correct</h2>
-            <p></p>
-            <p></p>
+        <div class="container-diagram-percentages">
+            <div class="container-percentuale">
+                <h2>Correct</h2>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div id="diagram">
+                <!-- qui andrà l'id del diagramma -->
+            </div>
+
+            <div class="container-percentuale">
+                <h2>Wrong</h2>
+                <p></p>
+                <p></p>
+            </div>
         </div>
 
-        <div>
-            <!-- qui andrà l'id del diagramma -->
-        </div>
 
-        <div>
-            <h2>Wrong</h2>
-            <p></p>
-            <p></p>
-        </div>
     </main>
 
-    <footer>
-        <input type="button" value="button-rate-us"><button>Rate us</button>
-    </footer>
+    <aside>
+        <input type="button" value="button-rate-us"><button type="button" id="valutazione" class="bottone">Rate us</button>
+    </aside>
+
+
 
 </body>
 

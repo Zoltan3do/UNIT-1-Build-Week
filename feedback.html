@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div><img src="" alt="logo"></div>
+    <header id="header">
+        <div class="container-logo">
+            <img src="" alt="logo" id="logo">
         </div>
     </header>
-    <main>
+    <main id="main">
         <div>
-            <h1>Tell us how it's going</h1>
+            <h1 id="titolo">Tell us how it's going</h1>
             <p>From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</p>
-            <p>
+            <div id="container-stelline">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,13 +30,14 @@
                 <span></span>
                 <span></span>
                 <span></span>
-            </p>
+            </div>
+
         </div>
-        <div>
+        <div id="comment-form-container">
             <form>
-                <label>Leave us an open feedback about your experience so far</label>
-                <textarea placeholder="Write your comment here"></textarea>
-                <button onclick="javascript:void(0)">MORE INFO</button>
+                <label for="commento">Leave us an open feedback about your experience so far</label>
+                <textarea placeholder="Write your comment here" id="commento" name="commento"></textarea>
+                <button onclick="javascript:void(0)" class="bottone" type="button" id="invio-commento">MORE INFO</button>
             </form>
         </div>
     </main>
