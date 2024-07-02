@@ -1,5 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+/* ANTONIO , CSS PER IL GRAFICO */
+#containerDiagram {
+  width: 400px;
+  height: 400px;
 }
 
+#responsesDiagram {
+  width: 300px;
+  height: 300px;
+}
