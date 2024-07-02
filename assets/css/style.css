@@ -6,7 +6,8 @@
 
 /*Stelline*/
 .container-stelline {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row-reverse;
     font-size: 2em;
 }
 
@@ -24,11 +25,11 @@
     color: #00ffff;
 }
 
-.container-stelline .star:hover ~ .star {
+.container-stelline .star:hover ~ .star:not(.on) {
     color: #555;
 }
 
-.container-stelline .star:hover, .container-stelline .star:hover ~ .star.on {
+.container-stelline .star:hover, .container-stelline .star:hover ~ .star.on, .container-stelline .star.on ~ .star.on {
     color: #00ffff;
 }
 
