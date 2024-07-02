@@ -157,7 +157,13 @@ p {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Inter Tight", sans-serif;
+  margin-left: -40px;
+}
+
+#main1 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .container-titolo p {
