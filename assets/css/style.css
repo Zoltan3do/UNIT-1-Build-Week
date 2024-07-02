@@ -147,7 +147,6 @@ main {
     color: #0B113B;
     cursor: pointer;
     transition: color 0.2s;
-
 }
 
 .container-stelline input[type="checkbox"] {
@@ -252,7 +251,10 @@ main {
     border: none;
     font-size: 1.4em;
     border-bottom: 3px solid #C2138E;
+    height: min-content;
+    color: white;
 }
+
 
 #comment-form-container {
     width: 80%;
@@ -273,4 +275,8 @@ main {
     border: none;
     margin-top:60px;
     margin-bottom: 60px;
+}
+
+#invio-commento:hover{
+    cursor:pointer;
 }
