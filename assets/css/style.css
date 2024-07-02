@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
-  font-family: "Inter Tight", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -21,129 +19,84 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+/* PRIMA PAGINA (INDEX.HTML) */
+#main1 {
+  text-align: left;
+  margin-left: 200px;
+}
 
 .container-logo,
 img {
   padding: 10px;
-  margin-left: 35px;
-  width: 38%;
+  margin-left: 90px;
+  width: 28%;
 }
 
-/* Questa è la sezione main, con h1, h3 e "p" sezione introduttiva  */
-#titolo {
+#container-instructions {
+  font-size: 1.1em;
+  font-family: "Outfit", sans-serif;
+}
+
+#titolo1 {
   text-align: left;
   font-display: block;
   font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  font-weight: 250;
   margin-bottom: 13px;
   width: 100%;
   font-size: 4.2rem;
   color: #e7e7eb;
-  text-align: center;
 }
-
-#container-instructions #titolo .bold {
-  margin-top: -30px;
+#titolo1 .bold {
+  margin-top: -20px;
   display: block;
   font-weight: 600;
 }
 
-#container-lista,
+#container-lista {
+  margin-left: 15px;
+  color: #bfd1d7;
+  line-height: 1.5;
+}
+
 .bold {
-  /* font-weight: 900; */
+  font-weight: 700;
   color: #e7e7eb;
+  font-family: "Outfit", sans-serif;
 }
 
 .violet {
-  font-family: "Inter Tight", sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-  margin-bottom: 10px;
-  margin-left: 90px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 7px;
   color: #c2128d;
-  font-style: normal;
 }
 
 #container-instruction,
 p {
   font-family: "Inter Tight", sans-serif;
   margin-bottom: 30px;
-  margin-left: 90px;
-  color: #e7e7eb;
-  font-size: 0.8em;
+  color: #bfd1d7;
+  font-size: 0.9em;
 }
 
-/* stilizzazione bottone di spunta pagina index */
+#container-form-index {
+  margin-top: 100px;
+  color: white;
+  font-weight: 200;
+}
 
 #policy {
   height: 15px;
   width: 15px;
   border: 1px, solid, white;
-  background-color: transparent;
-  margin-right: 10px;
+  color: transparent;
+  margin-right: 15px;
 }
 
-/* stilizzazione bottone proceed pagina index e bottone more info pagina feedback*/
-
-#start,
-#invio-commento {
-  margin: 0 auto;
-  color: #0b113b;
-  border: 2px solid #00ffff;
-  background-color: #00ffff;
-  box-shadow: 1px 1px 10px #00ffff, -1px -1px 10px #00ffff, -1px 1px 10px #00ffff, 1px -1px 10px #00ffff;
-}
-
-/* stilizzazione area commento pagina feedback */
-
-#comment-form-container {
-  width: 100%;
-  margin: 5% auto;
-}
-
-#commento {
-  display: block;
-  width: 60%;
-  height: 20px;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #d20094;
-  margin-bottom: 50px;
-}
-
-/*Stelline*/
-.container-stelline {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  padding-right: 200px;
-  font-weight: 900;
-}
-
-.container-stelline .star {
-  font-size: 0.7em;
-  color: #0a274f;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.container-stelline input[type="checkbox"] {
-  display: none;
-}
-
-.container-stelline .star:hover,
-.container-stelline .star:hover ~ .star {
-  color: #00ffff;
-}
-
-.container-stelline input[type="checkbox"]:checked ~ label.star {
-  color: #00ffff;
-}
-
-.container-stelline input[type="checkbox"]:checked ~ label.star,
-.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
-  color: #00ffff;
-}
-
-/* TIMER */
+/*SECONDA PAGINA , QUIZ E RISPOSTE (timer) */
 #timer {
   position: absolute;
   top: 20px;
@@ -176,7 +129,8 @@ p {
   color: #555;
 }
 
-/* ANTONIO , CSS PER IL GRAFICO */
+/* 3 pagina , Risultati pagina (diagramma e %) */
+
 #containerDiagram {
   width: 400px;
   height: 400px;
@@ -187,29 +141,68 @@ p {
   height: 300px;
 }
 
-/* Positioning feedback page */
+/* 4 pagina ,  Feedback  */
+#titolo4 {
+  font-display: block;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+  width: 100%;
+  font-size: 3rem;
+  color: #e7e7eb;
+  text-align: center;
+}
+
 .container-titolo {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  margin-left: -40px;
-}
-
-#main1 {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .container-titolo p {
-  font-size: 2.1em;
+  font-size: 1.8em;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .container-stelline {
-  width: 80%;
-  margin: 0 auto;
+  width: 45%;
   font-size: 5em;
   margin-bottom: 30px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  font-weight: 900;
+}
+
+.container-stelline .star {
+  font-size: 0.7em;
+  color: #0a274f;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.container-stelline input[type="checkbox"] {
+  display: none;
+}
+
+.container-stelline .star:hover,
+.container-stelline .star:hover ~ .star {
+  color: #00ffff;
+}
+
+.container-stelline input[type="checkbox"]:checked ~ label.star {
+  color: #00ffff;
+}
+
+.container-stelline input[type="checkbox"]:checked ~ label.star,
+.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
+  color: #00ffff;
+}
+
+#main4 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #comment-form-container label {
@@ -226,9 +219,10 @@ p {
   background-color: transparent;
   border: none;
   font-size: 1.4em;
-  border-bottom: 3px solid #c2138e;
+  border-bottom: 2px solid #c2138e;
   height: min-content;
   color: white;
+  resize: none;
 }
 
 #comment-form-container {
@@ -236,29 +230,27 @@ p {
   margin: 50px auto;
 }
 
-/* dimensioni bottoni */
-
-.bottone {
-  display: inline-block;
-  height: 55px;
-  width: 200px;
-}
-
+/* Bottoni */
 #start,
 #invio-commento {
   margin: 30px auto 0;
-  width: 35%;
-  height: 70px;
-  color: black;
-  font-weight: 800;
-  font-size: 1.7em;
+  color: #0a032e;
+  font-weight: 700;
+  font-size: 1.2em;
   background-color: #02ffff;
   box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
   border: none;
   margin-top: 60px;
   margin-bottom: 60px;
 }
+/* dimensioni bottoni */
+.bottone {
+  display: inline-block;
+  height: 55px;
+  width: 200px;
+}
 
-#invio-commento:hover {
+#invio-commento,
+#start:hover {
   cursor: pointer;
 }
