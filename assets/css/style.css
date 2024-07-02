@@ -83,14 +83,6 @@ p {
   margin-right: 10px;
 }
 
-/* dimensioni bottoni */
-
-.bottone {
-  display: inline-block;
-  height: 50px;
-  width: 180px;
-}
-
 /* stilizzazione bottone proceed pagina index e bottone more info pagina feedback*/
 
 #start,
@@ -248,8 +240,8 @@ p {
 
 .bottone {
   display: inline-block;
-  height: 50px;
-  width: 180px;
+  height: 55px;
+  width: 200px;
 }
 
 #start,
