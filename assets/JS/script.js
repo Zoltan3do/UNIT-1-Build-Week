@@ -98,27 +98,22 @@ const questions = [
     },
 ];
 
-
-
 // inizializzazione variabili puntatore
 const domanda = document.getElementById("titoloDomanda");
 const containerAnswers = document.getElementById("container-answers");
 const invioRisposta = document.getElementById("invio-risposta");
 
-
-
+const risposteCorrette = questions.map((item) => {
+    return item.correct_answer;
+});
 
 // dichiarazione variabili volanti
 let rispostaCorrente;
 let risposte = [];
-let risposteCorrette = [];
-
-
+let risposteCorretteDiUser = [];
 
 // chiamata alla funzione che previene comportamenti funzionali prima del caricamento
 window.addEventListener("load", init());
-
-
 
 // funzione di inizializzazione
 function init() {
@@ -126,10 +121,7 @@ function init() {
     nextButtonHidden();
     risposte = document.querySelectorAll("#container-answers div");
     clickRisposte();
-
 }
-
-
 
 // visualizzazione della prima domanda con annesse possibili risposte 
 function firstQuestionBuild() {
@@ -158,8 +150,6 @@ function firstQuestionBuild() {
     }
 }
 
-
-
 // costruzione di un array di risposte randomico
 function randomAnswersBuild() {
     const arr = [];
@@ -187,26 +177,54 @@ function randomAnswersBuild() {
     return randomized;
 }
 
-
-
 // funzione che disattiva il bottone di invio prima del click su una risposta
 function nextButtonHidden() {
     invioRisposta.style.display = "none";
 }
 
-
-
-// funzione che al click su una risposta estrae il contenuto 
+// funzione che al click su una risposta estrae il contenuto
 function clickRisposte() {
     for (let i = 0; i < risposte.length; i++) {
         risposte[i].addEventListener("click", function (e) {
             rispostaCorrente = e.target.textContent;
+            handleNextButton();
         });
     }
 }
 
+// funzione che rende visibile il bottone next
+
+function handleNextButton() {
+    invioRisposta.style.display = "block";
+}
 
 
+// effettua il controllo sulla risposta selezionata
+// in precedenza
+invioRisposta.addEventListener("click", function () {
+    checkRisposta();
+    showOtherQuestions();
+});
 
 
+// check risposta corretta e aggiunta risposta selezionata 
+function checkRisposta() {
+    if (risposteCorrette.includes(rispostaCorrente)) {
+        risposteCorretteDiUser.push(rispostaCorrente);
+    }
+}
 
+// visualizzazione delle altre domande con annesse relative
+// possibili risposte
+
+// !!! DA CAPIRE MEGLIO COME GESTIRE !!!
+function showOtherQuestions() {
+    questions.forEach(item => {
+        domanda.innerText = item.question;
+
+        randomAnswersBuild().forEach(item => console.log(item));
+        /*const risposta = document.createElement("div");
+        risposta.innerText = item.;
+        containerAnswers.appendChild(risposta);*/
+    });
+}
