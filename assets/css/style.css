@@ -264,6 +264,10 @@ p {
   resize: none;
 }
 
+#commento:focus, #commento:active{
+  outline:none
+}
+
 #comment-form-container {
   width: 80%;
   margin: 50px auto;
