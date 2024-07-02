@@ -5,48 +5,63 @@
 
 
 /*Stelline*/
-#container-stelline, #container-stelline ~ i{
-    color: #222;
-    text-shadow:none;
-    transition:color 200ms,
-                text-shadow 200ms;
-    transition-delay:0;        
+.container-stelline {
+    display: inline-block;
+    font-size: 2em;
 }
 
-#container-stelline:hover i:nth-child(2){
+.container-stelline .star {
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s;
+}
 
+.container-stelline .star.on {
+    color: #00ffff;
+}
+
+.container-stelline .star:hover {
+    color: #00ffff;
+}
+
+.container-stelline .star:hover ~ .star {
+    color: #555;
+}
+
+.container-stelline .star:hover, .container-stelline .star:hover ~ .star.on {
+    color: #00ffff;
 }
 
 
 /* TIMER */
 #timer {
-    position: absolute; 
+    position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .timer-circle {
+}
+
+.timer-circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #f0f0f0; 
-    border: 5px solid #009688; 
+    background-color: #f0f0f0;
+    border: 5px solid #009688;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .timer-text {
+}
+
+.timer-text {
     font-size: 30px;
     font-weight: bold;
     color: #009688;
-  }
-  
-  .timer-label {
+}
+
+.timer-label {
     font-size: 12px;
-    color: #555; 
-  }
+    color: #555;
+}
