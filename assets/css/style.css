@@ -13,6 +13,10 @@
     transition-delay:0;        
 }
 
+#container-stelline:hover i:nth-child(2){
+
+}
+
 
 /* TIMER */
 #timer {
