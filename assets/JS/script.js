@@ -99,7 +99,7 @@ const questions = [
 ];
 
 // inizializzazione variabili puntatore
-const domanda = document.getElementById("titoloDomanda");
+const domanda = document.getElementById("titolo2");
 const containerAnswers = document.getElementById("container-answers");
 const invioRisposta = document.getElementById("invio-risposta");
 
@@ -198,9 +198,7 @@ function handleNextButton() {
     invioRisposta.style.display = "block";
 }
 
-
-// effettua il controllo sulla risposta selezionata
-// in precedenza
+// funzione che gestisce il tasto di invio della risposta
 invioRisposta.addEventListener("click", function () {
     checkRisposta();
     showOtherQuestions();
@@ -208,7 +206,7 @@ invioRisposta.addEventListener("click", function () {
 
 
 // check risposta corretta e aggiunta risposta selezionata 
-function checkRisposta() {
+function checkRispostaCorretta() {
     if (risposteCorrette.includes(rispostaCorrente)) {
         risposteCorretteDiUser.push(rispostaCorrente);
     }
@@ -228,3 +226,5 @@ function showOtherQuestions() {
         containerAnswers.appendChild(risposta);*/
     });
 }
+
+

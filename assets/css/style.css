@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/assets/img/bg.jpg);
+  background-position: center;
 }
 
 /* Sezione Header contenente background-img-logo  */
@@ -22,11 +24,6 @@ body {
 
 
 /* PRIMA PAGINA (INDEX.HTML) */
-#main1 {
-  text-align: left;
-  margin-left: 200px;
-}
-
 .container-logo,
 img {
   padding: 10px;
@@ -34,13 +31,17 @@ img {
   width: 28%;
 }
 
+#main1 {
+  margin-left: 200px;
+}
+
 #container-instructions {
   font-size: 1.1em;
   font-family: "Outfit", sans-serif;
+  text-align: left;
 }
 
 #titolo1 {
-  text-align: left;
   font-display: block;
   font-family: "Outfit", sans-serif;
   font-weight: 250;
@@ -49,6 +50,7 @@ img {
   font-size: 4.2rem;
   color: #e7e7eb;
 }
+
 #titolo1 .bold {
   margin-top: -20px;
   display: block;
@@ -87,15 +89,38 @@ p {
 #container-form-index {
   margin-top: 100px;
   color: white;
-  font-weight: 200;
+  font-weight: 400;
+
+}
+
+.material-symbols-outlined {
+  font-size: 21px;
+  text-align: center;
+  position: relative;
+  top: -3.5px;
+  left:-3.5px;
+  font-weight: 900;
+
 }
 
 #policy {
-  height: 15px;
-  width: 15px;
-  border: 1px, solid, white;
-  color: transparent;
-  margin-right: 15px;
+  font-weight: 700;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#rude-checkbox {
+  height: 17px;
+  width: 17px;
+  border: 1.8px solid white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#start,
+#container-instructions {
+  display: inline-block;
 }
 
 /*SECONDA PAGINA , QUIZ E RISPOSTE (timer) */
@@ -130,6 +155,11 @@ p {
   font-size: 12px;
   color: #555;
 }
+
+#main2 {
+  color: white;
+}
+
 
 /* 3 pagina , Risultati pagina (diagramma e %) */
 
@@ -194,16 +224,16 @@ p {
 }
 
 .container-stelline .star:hover,
-.container-stelline .star:hover ~ .star {
+.container-stelline .star:hover~.star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked ~ label.star {
+.container-stelline input[type="checkbox"]:checked~label.star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked ~ label.star,
-.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
+.container-stelline input[type="checkbox"]:checked~label.star,
+.container-stelline input[type="checkbox"]:checked~label.star+input[type="checkbox"]~label.star {
   color: #00ffff;
 }
 
@@ -251,6 +281,7 @@ p {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
 /* dimensioni bottoni */
 .bottone {
   display: inline-block;
@@ -258,7 +289,7 @@ p {
   width: 200px;
 }
 
-#invio-commento,
-#start:hover {
+#invio-commento:hover,
+#start:hover,#rude-checkbox {
   cursor: pointer;
 }
