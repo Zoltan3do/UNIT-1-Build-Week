@@ -1,14 +1,52 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-/* ANTONIO , CSS PER IL GRAFICO */
-#containerDiagram {
-  width: 400px;
-  height: 400px;
+    margin: 0;
+    padding: 0;
 }
 
-#responsesDiagram {
-  width: 300px;
-  height: 300px;
+
+/*Stelline*/
+#container-stelline, #container-stelline ~ i{
+    color: #222;
+    text-shadow:none;
+    transition:color 200ms,
+                text-shadow 200ms;
+    transition-delay:0;        
 }
+
+#container-stelline:hover i:nth-child(2){
+
+}
+
+
+/* TIMER */
+#timer {
+    position: absolute; 
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    border: 5px solid #009688; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .timer-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #009688;
+  }
+  
+  .timer-label {
+    font-size: 12px;
+    color: #555; 
+  }

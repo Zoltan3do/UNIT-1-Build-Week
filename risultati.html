@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="risultati" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Results page</title>
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="risultati">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Results page</title>
+</head>
+
+<body>
     <header id="header">
-      <div class="container-logo">
-        <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
-      </div>
+        <div class="container-logo">
+            <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
+        </div>
     </header>
 
     <main id="main">
-      <div class="title-container">
-        <h1 id="titolo">Results</h1>
-        <p>the summury of your answere</p>
-      </div>
+        <div class="title-container">
+            <h1 id="titolo">Results</h1>
+            <p>the summury of your answere</p>
+        </div>
+        <div class="container-diagram-percentages">
+            <div class="container-percentuale">
+                <h2>Correct</h2>
+                <p></p>
+                <p></p>
+            </div>
 
-      <div class="container-diagram-percentages">
-        <div class="container-percentuale">
-          <h2>Correct</h2>
-          <p></p>
-          <p></p>
+            <div id="diagram">
+                <!-- qui andrà l'id del diagramma -->
+            </div>
+
+            <div class="container-percentuale">
+                <h2>Wrong</h2>
+                <p></p>
+                <p></p>
+            </div>
         </div>
-        <div id="containerDiagram">
-          <canvas id="responsesDiagram"></canvas>
-          <button type="button" id="valutazione" class="bottone">Rate us</button>
-        </div>
-        <div class="container-percentuale">
-          <h2>Wrong</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
+
+        <button type="button" id="valutazione" class="bottone">Rate us</button>
     </main>
-    <!-- ANTONIO !! GRAFICO test , vado a creare il collegamento a chart.js , che ho creato solo per il diagramma-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/JS/chart.js"></script>
-  </body>
+
+</body>
+
 </html>
