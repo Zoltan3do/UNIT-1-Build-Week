@@ -9,7 +9,6 @@
 }
 
 body {
-  margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/assets/img/bg.jpg);
@@ -32,14 +31,15 @@ img {
 
 /* Questa è la sezione main, con h1, h3 e "p" sezione introduttiva  */
 #titolo {
+  text-align: left;
   font-display: block;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   margin-bottom: 13px;
   width: 100%;
-  margin-left: 90px;
   font-size: 4.2rem;
   color: #e7e7eb;
+  text-align: center;
 }
 
 #container-instructions #titolo .bold {
@@ -73,17 +73,6 @@ p {
   font-size: 0.8em;
 }
 
-#container-lista ul li {
-  margin-left: 110px;
-}
-
-/* modifiche sara bottoni */
-main {
-  width: 90%;
-  margin: 20px auto;
-  text-align: center;
-}
-
 /* stilizzazione bottone di spunta pagina index */
 
 #policy {
@@ -107,21 +96,17 @@ main {
 #start,
 #invio-commento {
   margin: 0 auto;
-  color: #0B113B;
-  border: 2px solid #00FFFF;
-  background-color: #00FFFF;
-  box-shadow: 1px 1px 10px #00FFFF,
-      -1px -1px 10px #00FFFF,
-      -1px 1px 10px #00FFFF,
-      1px -1px 10px #00FFFF;
+  color: #0b113b;
+  border: 2px solid #00ffff;
+  background-color: #00ffff;
+  box-shadow: 1px 1px 10px #00ffff, -1px -1px 10px #00ffff, -1px 1px 10px #00ffff, 1px -1px 10px #00ffff;
 }
 
 /* stilizzazione area commento pagina feedback */
 
-#comment-form-container{
+#comment-form-container {
   width: 100%;
   margin: 5% auto;
-
 }
 
 #commento {
@@ -129,7 +114,7 @@ main {
   width: 60%;
   height: 20px;
   border: 1px solid transparent;
-  border-bottom: 1px solid #D20094;
+  border-bottom: 1px solid #d20094;
   margin-bottom: 50px;
 }
 
@@ -218,9 +203,10 @@ main {
   margin-left: -40px;
 }
 
-#main {
+#main1 {
   width: 60%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .container-titolo p {
@@ -241,16 +227,16 @@ main {
 }
 
 #commento {
-    margin-top: 50px;
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.4em;
-    border-bottom: 3px solid #C2138E;
-    height: min-content;
-    color: white;
+  margin-top: 50px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4em;
+  border-bottom: 3px solid #c2138e;
+  height: min-content;
+  color: white;
 }
 
 #comment-form-container {
@@ -268,21 +254,18 @@ main {
 
 #start,
 #invio-commento {
-    margin: 30px auto 0;
-    width: 35%;
-    height: 70px;
-    color: black;
-    font-weight: 800;
-    font-size: 1.7em;
-    background-color: #02FFFF;
-    box-shadow: 0 0 20px rgba(2, 255, 255, 0.5),
-        0 0 20px rgba(2, 255, 255, 0.5),
-        0 0 20px rgba(2, 255, 255, 0.5);
-    border: none;
-    margin-top:60px;
-    margin-bottom: 60px;
+  margin: 30px auto 0;
+  width: 35%;
+  height: 70px;
+  color: black;
+  font-weight: 800;
+  font-size: 1.7em;
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
+  border: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-
 
 #invio-commento:hover {
   cursor: pointer;
