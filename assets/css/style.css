@@ -16,7 +16,7 @@
 
 /* TIMER */
 #timer {
-    position: absolute; /* Adjust positioning as needed */
+    position: absolute; 
     top: 20px;
     right: 20px;
     display: flex;
@@ -28,8 +28,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #f0f0f0; /* Gray background */
-    border: 5px solid #009688; /* Blue border */
+    background-color: #f0f0f0; 
+    border: 5px solid #009688; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,5 +44,5 @@
   
   .timer-label {
     font-size: 12px;
-    color: #555; /* Dark gray for labels */
+    color: #555; 
   }
