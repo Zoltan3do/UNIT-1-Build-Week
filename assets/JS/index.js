@@ -37,5 +37,3 @@ rudeCheckbox.addEventListener("click", function () {
 function cambiaPagina() {
     window.location.href = "test.html";
 }
-
-

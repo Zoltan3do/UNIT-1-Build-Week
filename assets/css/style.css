@@ -186,7 +186,7 @@ p {
 }
 
 .container-titolo {
-  width: 100%;
+  width: 110%;
   margin: 0 auto;
   text-align: center;
   margin-left: -40px;
@@ -210,6 +210,7 @@ p {
   display: inline-flex;
   flex-direction: row-reverse;
   font-weight: 900;
+  justify-content: center;
 }
 
 .container-stelline .star {
@@ -266,6 +267,10 @@ p {
 #comment-form-container {
   width: 80%;
   margin: 50px auto;
+}
+
+.star {
+  margin: 0 5px;
 }
 
 /* Bottoni */
