@@ -97,44 +97,14 @@ main {
 
 }
 
-/* dimensioni bottoni */
 
-.bottone {
-  display: inline-block;
-  height: 50px;
-  width: 180px;
-}
 
-/* stilizzazione bottone proceed pagina index e bottone more info pagina feedback*/
 
-#start,
-#invio-commento {
-  margin: 0 auto;
-  color: #0B113B;
-  border: 2px solid #00FFFF;
-  background-color: #00FFFF;
-  box-shadow: 1px 1px 10px #00FFFF,
-      -1px -1px 10px #00FFFF,
-      -1px 1px 10px #00FFFF,
-      1px -1px 10px #00FFFF;
-}
 
-/* stilizzazione area commento pagina feedback */
 
-#comment-form-container{
-  width: 100%;
-  margin: 5% auto;
 
-}
 
-#commento {
-  display: block;
-  width: 60%;
-  height: 20px;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #D20094;
-  margin-bottom: 50px;
-}
+
 
 /*Stelline*/
 .container-stelline {
@@ -250,7 +220,7 @@ main {
     background-color: transparent;
     border: none;
     font-size: 1.4em;
-    border-bottom: 3px solid #C2138E;
+    border-bottom: 2px solid #C2138E;
     height: min-content;
     color: white;
 }
@@ -261,13 +231,22 @@ main {
     margin: 50px auto;
 }
 
+/* dimensioni bottoni */
+
+.bottone {
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+}
+
+#start,
 #invio-commento {
     margin: 30px auto 0;
     width: 35%;
-    height: 70px;
-    color: black;
-    font-weight: 800;
-    font-size: 1.7em;
+    height: 50px;
+    color: #0B113B;
+    font-weight: 700;
+    font-size: 1.3em;
     background-color: #02FFFF;
     box-shadow: 0 0 20px rgba(2, 255, 255, 0.5),
         0 0 20px rgba(2, 255, 255, 0.5),
@@ -276,6 +255,7 @@ main {
     margin-top:60px;
     margin-bottom: 60px;
 }
+
 
 #invio-commento:hover{
     cursor:pointer;
