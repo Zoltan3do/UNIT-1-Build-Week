@@ -34,6 +34,8 @@ img {
   font-size: 1.1em;
   font-family: "Outfit", sans-serif;
   text-align: left;
+  margin-left: -33%;
+  /* Ho allineato il contenitore delle istruzioni al logo epicode*/
 }
 
 #titolo1 {
@@ -103,10 +105,14 @@ p {
   margin-left: 10px;
   font-family: "Outfit", sans-serif;
 }
+
 #start {
   color: white;
   border: 1px solid white;
+  position: relative;
+  right: -180px
 }
+
 #rude-checkbox {
   height: 17px;
   width: 17px;
@@ -152,10 +158,12 @@ p {
   font-size: 12px;
   color: #555;
 }
+
 .containerTest {
   width: 100%;
   text-align: center;
 }
+
 #main2 {
   margin-top: 150px;
   color: white;
@@ -179,6 +187,7 @@ p {
   text-align: center;
   font-size: 1.1em;
 }
+
 #invio-risposta {
   display: inline-block;
   color: #0a274f;
@@ -207,13 +216,15 @@ p {
 
 #aside p {
   display: inline-block;
-  width: 10%;
+  width: 15%;
   margin-right: 60%;
   font-size: 1.2rem;
 }
 
 .questViolet {
   color: #c2128d;
+  font-size: 1.1em;
+  /* vertical-align: middle; */
 }
 
 /* 3 pagina , Risultati pagina (diagramma e %) */
@@ -228,9 +239,11 @@ p {
   font-size: 3rem;
   font-weight: bolder;
 }
+
 .subTitle {
   font-family: "Outfit", sans-serif;
 }
+
 #containerDiagram {
   display: inline-block;
   width: 380px;
@@ -241,28 +254,38 @@ p {
 .subTitle {
   font-size: 2rem;
 }
+
 .container-percentuale {
   display: inline-block;
   vertical-align: middle;
   width: 35%;
-  margin-bottom: 50vh;
+  /* margin-bottom: 50vh; */
+  /*Ho rimosso il margin bottom per aggiungerlo in negativo al top in modo da eliminare lo scroll-down*/
+  margin-top: -66vh;
 }
+
 .left {
   text-align: left;
+  margin-right: -10%
 }
+
 .right {
   text-align: right;
+  margin-left: -10%
 }
+
 .container-percentuale h2 {
   font-size: 4rem;
   font-weight: 200;
   margin-bottom: -10px;
 }
+
 .firstP {
   font-size: 4rem;
   font-weight: 700;
   margin: 0px;
 }
+
 .secP {
   font-size: 1.5rem;
   margin: 0px;
@@ -338,16 +361,16 @@ p {
 }
 
 .container-stelline .star:hover,
-.container-stelline .star:hover ~ .star {
+.container-stelline .star:hover~.star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked ~ label.star {
+.container-stelline input[type="checkbox"]:checked~label.star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked ~ label.star,
-.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
+.container-stelline input[type="checkbox"]:checked~label.star,
+.container-stelline input[type="checkbox"]:checked~label.star+input[type="checkbox"]~label.star {
   color: #00ffff;
 }
 
@@ -373,7 +396,7 @@ p {
   font-size: 1.4em;
   border-bottom: 2px solid #c2138e;
   height: min-content;
-  color: #0a274f;
+  color: white;
   resize: none;
 }
 
@@ -399,10 +422,10 @@ p {
   font-size: 1.2em;
   background-color: #02ffff;
   margin-top: 60px;
-  margin-bottom: 60px;
   color: #0a274f;
   border: 1px solid white;
 }
+
 /* dimensioni bottoni */
 .bottone {
   display: inline-block;
@@ -413,6 +436,7 @@ p {
 #rude-checkbox:hover {
   cursor: pointer;
 }
+
 #invio-commento {
   margin-top: 40px;
   color: #0a274f;
