@@ -10,18 +10,28 @@
   <body>
     <div class="containerTest">
       <header id="header">
-        <div class="container-logo">
+        <div class="container-logo block-inline">
           <img src="assets/img/epicode_logo.png" alt="logo" id="logo" />
         </div>
-        <!-- <div id="timer"></div> -->
-        <div id="timer">
-          <div class="timer-circle">
-            <span class="timer-label">SECONDS</span>
-            <span class="timer-text">16</span>
-            <span class="timer-label">REMAINING</span>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <div class="item " id="position-top-right">
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle-background" class="circle-background" r="70" cy="81" cx="81" stroke-width="8"
+                stroke="#3E3E3E" fill="none" />
+              <circle id="circle" class="circle_animation" r="70" cy="81" cx="81" stroke-width="8" stroke="#00FFFF"
+                fill="none" />
+            </g>
+          </svg>
+          <div class="timer-content">
+            <span class="timer-label top-label">SECONDS</span>
+            <h2>10</h2>
+            <span class="timer-label bottom-label">REMAINING</span>
           </div>
         </div>
       </header>
+
       <main id="main2">
         <h1 id="titolo2"></h1>
         <!-- Contenitore principale per impostare gli elementi all interno della webApp-->

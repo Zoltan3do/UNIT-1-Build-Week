@@ -19,7 +19,7 @@ body {
 #header {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 
 /* PRIMA PAGINA (INDEX.HTML) */
@@ -27,7 +27,7 @@ body {
 img {
   padding: 10px;
   margin-left: 90px;
-  width: 28%;
+  width: 33%;
 }
 
 #container-instructions {
@@ -46,6 +46,8 @@ img {
   width: 100%;
   font-size: 4.2rem;
   color: #e7e7eb;
+  line-height: 1;
+  /*Ho aggiunto la distanza tra le linee dal titolo*/
 }
 
 #titolo1 .bold {
@@ -127,36 +129,15 @@ p {
 }
 
 /*SECONDA PAGINA , QUIZ E RISPOSTE (timer) */
-#timer {
+#position-top-right {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.timer-circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  border: 5px solid #009688;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.timer-text {
-  font-size: 30px;
-  font-weight: bold;
-  color: #009688;
+  top: 5%;
+  right: 5%;
 }
 
 .timer-label {
   font-size: 12px;
-  color: #555;
+  color: white;
 }
 
 .containerTest {
@@ -164,15 +145,71 @@ p {
   text-align: center;
 }
 
-#main2 {
-  margin-top: 150px;
+.item {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+svg {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle_animation {
+  stroke-dasharray: 440;
+  /* circonferenza del cerchio */
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+  stroke: #00FFFF;
+  /* colore */
+  stroke-width: 15;
+  /* spessore */
+}
+
+.circle-background {
+  stroke: #3E3E3E;
+  stroke-width: 15;
+}
+
+.timer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  width: 60%;
+}
+
+.timer-content h2 {
+  margin: 5px 0;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.timer-label {
+  font-size: 12px;
+  display: block;
+}
+
+#main2 {
   margin: 0 auto;
+  margin-top: 8%;
+  /*Ho dato al margine un valore percentuale*/
+  color: white;
+  width: 70%;
+
 }
 
 #titolo2 {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-family: "Outfit", helvetica, sans-serif;
+  font-weight: 500;
+  /*Ho dato il font al titolo della domanda*/
 }
 
 #container-answers div {
@@ -186,6 +223,10 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
   font-size: 1.1em;
+  font-weight: 600;
+  /*Ho aggiunto lo spessore al font*/
+  font-family: "Outfit", sans-serif;
+  /*Ho aggiunto il font alle risposte*/
 }
 
 #invio-risposta {
@@ -198,6 +239,7 @@ p {
   cursor: pointer;
   height: 55px;
   width: 200px;
+  margin-top: -500px
 }
 
 #container-answers div:hover {
@@ -322,10 +364,8 @@ p {
 }
 
 .container-titolo {
-  width: 110%;
+  width: 78%;
   margin: 0 auto;
-  text-align: center;
-  margin-left: -40px;
 }
 
 #main1 {
@@ -336,7 +376,7 @@ p {
 
 .container-titolo p {
   font-size: 1.8em;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .container-stelline {
@@ -350,7 +390,7 @@ p {
 }
 
 .container-stelline .star {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #0a274f;
   cursor: pointer;
   transition: color 0.2s;
@@ -384,6 +424,7 @@ p {
   text-align: center;
   color: white;
   font-size: 1.8em;
+  font-family: "Outfit";
 }
 
 #commento {
