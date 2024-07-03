@@ -1,3 +1,92 @@
+Zoltan
+z0ltnxplorer
+Online
+
+Zoltan — 30/06/2024 21:38
+https://discord.gg/4mXrJ6FF
+Saretta92 — 30/06/2024 22:11
+Ciaooo! Mi dice che l'invito non è valido
+Zoltan — 30/06/2024 22:11
+https://discord.gg/R25HQSDD
+prova con questo
+Saretta92 — 30/06/2024 22:12
+Ottimo grazie!
+Saretta92 — Oggi alle 19:12
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+Mostra
+index.html
+3 KB
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Week Epicode</title>
+Mostra
+test.html
+2 KB
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="risultati" />
+Mostra
+risultati.html
+2 KB
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Feedback page where we tell how it's going" />
+Mostra
+feedback.html
+3 KB
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+Mostra
+style.css
+8 KB
+const data = {
+  datasets: [
+    {
+      data: [7, 5], // Esempio: 7 risposte corrette e 5 risposte sbagliate
+      backgroundColor: [
+        "#D20094", // Rosso per risposte sbagliate
+Mostra
+chart.js
+2 KB
+const checkmark = document.querySelector(".material-symbols-outlined");
+const bottone = document.getElementById("start");
+const rudeCheckbox = document.querySelector("#rude-checkbox");
+
+window.addEventListener("load", init());
+function init() {
+Mostra
+index.js
+2 KB
+const questions = [
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "easy",
+    question: "What does CPU stand for?",
+Mostra
+script.js
+7 KB
+﻿
+Saretta92
+saretta92.
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -28,10 +117,6 @@ img {
   padding: 10px;
   margin-left: 90px;
   width: 28%;
-}
-
-#main1 {
-  margin-left: 100px;
 }
 
 #container-instructions {
@@ -105,8 +190,12 @@ p {
   font-size: 0.9em;
   display: inline-block;
   margin-left: 10px;
+  font-family: "Outfit", sans-serif;
 }
-
+#start {
+  color: white;
+  border: 1px solid white;
+}
 #rude-checkbox {
   height: 17px;
   width: 17px;
@@ -169,7 +258,7 @@ p {
 
 #container-answers div {
   display: inline-block;
-  width:41%;
+  width: 41%;
   padding: 25px 30px;
   border: 0px solid white;
   border-radius: 200px;
@@ -177,41 +266,113 @@ p {
   margin: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
-  font-size:1.1em
+  font-size: 1.1em;
 }
 #invio-risposta {
-  font-size: 1.5rem;
-  margin: 80px auto;
-  padding: 10px 60px;
-  border: 0px solid white;
-  border-radius: 200px;
-  box-shadow: -1px -2.5px 2px 1.7px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  margin: 30px auto 0;
-  color: #0a032e;
+  display: inline-block;
+  color: #0a274f;
+  border: 1px solid white;
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #02ffff;
-  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
   height: 55px;
   width: 200px;
 }
+
+#container-answers div:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #d20094, #900080);
+}
+
+#invio-risposta:hover {
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
+}
+
+#aside {
+  margin-top: 50px;
+}
+
+#aside p {
+  display: inline-block;
+  width: 10%;
+  margin-right: 60%;
+  font-size: 1.2rem;
+}
+
 .questViolet {
   color: #c2128d;
 }
 
 /* 3 pagina , Risultati pagina (diagramma e %) */
 
-#containerDiagram {
-  width: 400px;
-  height: 400px;
+#main3 {
+  text-align: center;
+  color: white;
+  font-family: "Outfit", sans-serif;
 }
 
-#responsesDiagram {
-  width: 300px;
-  height: 300px;
+#titolo3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.subTitle {
+  font-family: "Outfit", sans-serif;
+}
+#containerDiagram {
+  display: inline-block;
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+}
+
+.subTitle {
+  font-size: 2rem;
+}
+.container-percentuale {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  margin-bottom: 50vh;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.container-percentuale h2 {
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: -10px;
+}
+.firstP {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0px;
+}
+.secP {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+#valutazione {
+  margin-top: 40px;
+  color: #0a274f;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border: none;
+  height: 55px;
+  width: 200px;
+}
+
+#valutazione:hover {
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
 }
 
 /* 4 pagina ,  Feedback  */
@@ -301,7 +462,7 @@ p {
   font-size: 1.4em;
   border-bottom: 2px solid #c2138e;
   height: min-content;
-  color: white;
+  color: #0a274f;
   resize: none;
 }
 
@@ -323,15 +484,14 @@ p {
 #start,
 #invio-commento {
   margin: 30px auto 0;
-  color: #0a032e;
   font-weight: 700;
   font-size: 1.2em;
   background-color: #02ffff;
-  border: none;
   margin-top: 60px;
   margin-bottom: 60px;
+  color: #0a274f;
+  border: 1px solid white;
 }
-
 /* dimensioni bottoni */
 .bottone {
   display: inline-block;
@@ -339,10 +499,23 @@ p {
   width: 200px;
 }
 
-#invio-commento:hover,
-#start:hover {
-  cursor: pointer;
-}
 #rude-checkbox:hover {
   cursor: pointer;
+}
+#invio-commento {
+  margin-top: 40px;
+  color: #0a274f;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border: none;
+  height: 55px;
+  width: 200px;
+}
+
+#invio-commento:hover {
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
 }
