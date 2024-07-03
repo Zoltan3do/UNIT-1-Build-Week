@@ -227,6 +227,7 @@ svg {
   /*Ho aggiunto lo spessore al font*/
   font-family: "Outfit", sans-serif;
   /*Ho aggiunto il font alle risposte*/
+  transition-duration: 3s;
 }
 
 #invio-risposta {
@@ -239,7 +240,8 @@ svg {
   cursor: pointer;
   height: 55px;
   width: 200px;
-  margin-top: -500px
+  margin-top: -500px;
+  transition-duration: 0.2s;
 }
 
 #container-answers div:hover {
@@ -344,6 +346,7 @@ svg {
   border: none;
   height: 55px;
   width: 200px;
+  transition-duration: 0.3s;
 }
 
 #valutazione:hover {
@@ -466,6 +469,7 @@ svg {
   margin-top: 60px;
   color: #0a274f;
   border: 1px solid white;
+  transition-duration: 0.2s;
 }
 
 /* dimensioni bottoni */
