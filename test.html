@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Week Epicode</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Week Epicode</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-  <header id="header">
-    <div class="container-logo">
-      <img src="assets/img/epicode_logo.png" alt="logo" id="logo">
+  <body>
+    <div class="containerTest">
+      <header id="header">
+        <div class="container-logo">
+          <img src="assets/img/epicode_logo.png" alt="logo" id="logo" />
+        </div>
+        <!-- <div id="timer"></div> -->
+        <div id="timer">
+          <div class="timer-circle">
+            <span class="timer-label">SECONDS</span>
+            <span class="timer-text">16</span>
+            <span class="timer-label">REMAINING</span>
+          </div>
+        </div>
+      </header>
+      <main id="main2">
+        <h1 id="titolo2"></h1>
+        <!-- Contenitore principale per impostare gli elementi all interno della webApp-->
+        <div id="container-answers"></div>
+        <button id="invio-risposta" type="button">Next</button>
+        <aside id="aside">
+          <p>Question <span>1</span><span class="questViolet">/10</span></p>
+        </aside>
+      </main>
     </div>
-    <!-- <div id="timer"></div> -->
-    <div id="timer">
-      <div class="timer-circle">
-        <span class="timer-label">SECONDS</span>
-        <span class="timer-text">16</span>
-        <span class="timer-label">REMAINING</span>
-      </div>
-    </div>
-  </header>
-  <main id="main2">
-      <h1 id="titolo2"></h1>
-      <!-- Contenitore principale per impostare gli elementi all interno della webApp-->
-      <div id="container-answers"></div>
-      <button id="invio-risposta" type="button" class="bottone">Next</button>
-      
-      <aside id="aside">
-        <p>Question <span>1</span><span class="violet">/10</span></p>
-      </aside>
-  </main>
-
-  <script src="assets/JS/script.js"></script>
-</body>
-
+    <script src="assets/JS/script.js"></script>
+  </body>
 </html>

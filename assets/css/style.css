@@ -22,7 +22,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 /* PRIMA PAGINA (INDEX.HTML) */
 .container-logo,
 img {
@@ -32,7 +31,7 @@ img {
 }
 
 #main1 {
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 #container-instructions {
@@ -90,7 +89,6 @@ p {
   margin-top: 100px;
   color: white;
   font-weight: 400;
-
 }
 
 .material-symbols-outlined {
@@ -98,9 +96,8 @@ p {
   text-align: center;
   position: relative;
   top: -3.5px;
-  left:-3.5px;
+  left: -3.5px;
   font-weight: 900;
-
 }
 
 #policy {
@@ -155,11 +152,52 @@ p {
   font-size: 12px;
   color: #555;
 }
-
+.containerTest {
+  width: 100%;
+  text-align: center;
+}
 #main2 {
+  margin-top: 150px;
   color: white;
+  width: 60%;
+  margin: 0 auto;
 }
 
+#titolo2 {
+  margin-bottom: 80px;
+}
+
+#container-answers div {
+  display: inline-block;
+  padding: 15px 170px;
+  border: 0px solid white;
+  border-radius: 200px;
+  box-shadow: -1px -2.5px 2px 1.7px;
+  margin: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#invio-risposta {
+  font-size: 1.5rem;
+  margin: 80px auto;
+  padding: 10px 60px;
+  border: 0px solid white;
+  border-radius: 200px;
+  box-shadow: -1px -2.5px 2px 1.7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 30px auto 0;
+  color: #0a032e;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: #02ffff;
+  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
+  border: none;
+  height: 55px;
+  width: 200px;
+}
+.questViolet {
+  color: #c2128d;
+}
 
 /* 3 pagina , Risultati pagina (diagramma e %) */
 
@@ -225,16 +263,16 @@ p {
 }
 
 .container-stelline .star:hover,
-.container-stelline .star:hover~.star {
+.container-stelline .star:hover ~ .star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked~label.star {
+.container-stelline input[type="checkbox"]:checked ~ label.star {
   color: #00ffff;
 }
 
-.container-stelline input[type="checkbox"]:checked~label.star,
-.container-stelline input[type="checkbox"]:checked~label.star+input[type="checkbox"]~label.star {
+.container-stelline input[type="checkbox"]:checked ~ label.star,
+.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
   color: #00ffff;
 }
 
@@ -264,8 +302,9 @@ p {
   resize: none;
 }
 
-#commento:focus, #commento:active{
-  outline:none
+#commento:focus,
+#commento:active {
+  outline: none;
 }
 
 #comment-form-container {
@@ -285,7 +324,6 @@ p {
   font-weight: 700;
   font-size: 1.2em;
   background-color: #02ffff;
-  box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
   border: none;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -299,6 +337,9 @@ p {
 }
 
 #invio-commento:hover,
-#start:hover,#rude-checkbox {
+#start:hover {
+  cursor: pointer;
+}
+#rude-checkbox:hover {
   cursor: pointer;
 }
