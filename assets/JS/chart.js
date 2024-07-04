@@ -1,4 +1,4 @@
-const ris = parseInt(localStorage.getItem("corrette"))||0;
+const ris = parseInt(localStorage.getItem("corrette")) + 1 || 0;
 const totalQuestions = 10;
 const wrongAnswers = totalQuestions - ris;
 Chart.register({
