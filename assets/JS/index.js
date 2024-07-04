@@ -9,7 +9,7 @@ function init() {
 
 function initStyles() {
   checkmark.style.display = "none";
-  bottone.setAttribute("disabled", "true");
+  bottone.disabled = true;
   bottone.style.cursor = "auto";
   bottone.style.opacity = 0.6;
   bottone.style.backgroundColor = "gray";
@@ -20,7 +20,7 @@ function initStyles() {
 
 function checkbox() {
   checkmark.style.display = "inline-block";
-  bottone.setAttribute("disabled", "false");
+  bottone.disabled = false;
   bottone.style.cursor = "pointer";
   bottone.style.opacity = 1;
   rudeCheckbox.style.color = "#c2138e";
@@ -45,6 +45,9 @@ rudeCheckbox.addEventListener("click", function () {
   togglestate = !togglestate;
 });
 
-function cambiaPagina() {
-  window.location.href = "test.html";
-}
+//cambio di pagina al click
+bottone.addEventListener("click", function () {
+  if (!bottone.disabled) {
+    window.location.href = "test.html";
+  }
+});

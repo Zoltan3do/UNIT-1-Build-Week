@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="risultati" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Results page</title>
-  </head>
 
-  <body>
-    <header id="header">
-      <div class="container-logo">
-        <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="risultati" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Results page</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container-logo">
+      <img src="assets/img/epicode_logo.png" id="logo" alt="logo" />
+    </div>
+  </header>
+
+  <main id="main3">
+    <div class="title-container">
+      <h1 id="titolo3">Results</h1>
+      <p class="subTitle">The summary of your answer:</p>
+    </div>
+
+    <div class="container-diagram-percentages">
+      <div class="container-percentuale left">
+        <h2>Correct</h2>
+        <p class="firstP">20%</p>
+        <p class="secP"><span id="correct-answers">2</span></p>
       </div>
-    </header>
-
-    <main id="main3">
-      <div class="title-container">
-        <h1 id="titolo3">Results</h1>
-        <p class="subTitle">The summary of your answer:</p>
+      <div id="containerDiagram">
+        <canvas id="responsesDiagram"></canvas>
+        <button type="button" id="valutazione" class="bottone" onclick="cambiaPagina()">RATE US</button>
       </div>
-
-      <div class="container-diagram-percentages">
-        <div class="container-percentuale left">
-          <h2>Correct</h2>
-          <p class="firstP">20%</p>
-          <p class="secP"><span id="correct-answers">2</span>/10 questions</p>
-        </div>
-        <div id="containerDiagram">
-          <canvas id="responsesDiagram"></canvas>
-          <button type="button" id="valutazione" class="bottone">RATE US</button>
-        </div>
-        <div class="container-percentuale right">
-          <h2>Wrong</h2>
-          <p class="firstP">80%</p>
-          <p class="secP"><span id="incorrect-answers">2</span>/10 questions</p>
-        </div>
+      <div class="container-percentuale right">
+        <h2>Wrong</h2>
+        <p class="firstP">80%</p>
+        <p class="secP"><span id="incorrect-answers">2</span></p>
       </div>
-    </main>
+    </div>
+  </main>
+</body>
+<script>
+  function cambiaPagina() {
+    window.location.href = "feedback.html";
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script  src="assets/JS/chart.js"></script>
 
-    <!-- ANTONIO !! GRAFICO test , vado a creare il collegamento a chart.js , che ho creato solo per il diagramma-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/JS/chart.js"></script>
-  </body>
 </html>

@@ -171,7 +171,7 @@ svg {
 }
 
 .circle-background {
-  stroke: #3E3E3E;
+  stroke: rgba(156, 156, 156, 0.3);
   stroke-width: 15;
 }
 
@@ -499,4 +499,12 @@ svg {
 #invio-commento:hover {
   background-color: #02ffff;
   box-shadow: 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5), 0 0 20px rgba(2, 255, 255, 0.5);
+}
+
+
+
+/* Click sulla risposta */
+.selectedQuestion {
+  background: linear-gradient(to bottom, #d20094, #900080);
+  /* nuova classe per far colorare hover ad ogni risposta selezionata*/
 }

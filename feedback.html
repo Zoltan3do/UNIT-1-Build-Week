@@ -52,9 +52,14 @@
     <div id="comment-form-container">
       <label for="commento">Leave us an open feedback about your experience so far</label>
       <textarea placeholder="Write your comment here" id="commento" name="commento"></textarea>
-      <button href="javascript:void(0)" class="bottone" type="button" id="invio-commento">MORE INFO</button>
+      <button onclick="cambiaPagina()" class="bottone" type="button" id="invio-commento">MORE INFO</button>
     </div>
   </main>
 </body>
+<script>
+  function cambiaPagina() {
+    window.open("https://epicode.com/it/", "_blank");
+  }
+</script>
 
 </html>
