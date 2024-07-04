@@ -1,6 +1,8 @@
-const ris = parseInt(localStorage.getItem("corrette")) + 1 || 0;
-const totalQuestions = 10;
+const ris = parseInt(localStorage.getItem("corrette")) || 0;
+const totalQuestions = parseInt(localStorage.getItem("lunghezzaQuestions")) || 0;
+console.log(totalQuestions);
 const wrongAnswers = totalQuestions - ris;
+
 Chart.register({
   id: "TextPlugin", // Identificatore del testo che andremo a inserire graficamente all'interno del diagramma
   // Funzione che viene chiamata prima che il grafico venga disegnato
@@ -123,8 +125,6 @@ Chart.register({
   },
 });
 
-
-console.log(ris);
 // Configurazione dei dati per il grafico
 const data = {
   datasets: [

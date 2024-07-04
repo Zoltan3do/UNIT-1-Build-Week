@@ -112,11 +112,15 @@ const domande = questions.map((item) => {
 });
 
 // dichiarazione variabili volanti
+let lunghezzaDataset = domande.length;
 let timerInterval;
 let domandePassate = 0;
 let rispostaCorrente;
 let divRisposte = [];
 let risposteCorretteDiUser = [];
+localStorage.setItem("lunghezzaQuestions", lunghezzaDataset);
+localStorage.setItem("corrette", risposteCorretteDiUser.length);
+console.log(lunghezzaDataset)
 
 // chiamata alla funzione che previene comportamenti funzionali prima del caricamento
 window.addEventListener("load", init());
