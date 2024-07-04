@@ -120,7 +120,6 @@ let divRisposte = [];
 let risposteCorretteDiUser = [];
 localStorage.setItem("lunghezzaQuestions", lunghezzaDataset);
 localStorage.setItem("corrette", risposteCorretteDiUser.length);
-console.log(lunghezzaDataset)
 
 // chiamata alla funzione che previene comportamenti funzionali prima del caricamento
 window.addEventListener("load", init());
@@ -222,6 +221,7 @@ invioRisposta.addEventListener("click", buttonClickSelection);
 function checkRispostaCorretta() {
   if (risposteCorrette.includes(rispostaCorrente)) {
     risposteCorretteDiUser.push(rispostaCorrente);
+    console.log(risposteCorretteDiUser.length);
     localStorage.setItem("corrette", risposteCorretteDiUser.length);
   }
 }
@@ -258,7 +258,7 @@ function changeQuestionNumber() {
 
 // timer
 function timerCountDown() {
-  let time = 5;
+  let time = 60;
   let initialOffset = 440;
   let i = 0;
 
@@ -300,6 +300,7 @@ function timerCountDown() {
 
 function buttonClickSelection() {
   if (domandePassate === domande.length - 1) {
+    checkRispostaCorretta();
     window.location.href = 'risultati.html';
   } else {
     timerCountDown();
