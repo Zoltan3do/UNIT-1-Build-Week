@@ -1,4 +1,4 @@
-const ris = parseInt(localStorage.getItem("corrette"))  || 0;
+const ris = parseInt(localStorage.getItem("corrette")) || 0;
 const totalQuestions = parseInt(localStorage.getItem("lunghezzaQuestions")) || 0;
 console.log(ris);
 const wrongAnswers = totalQuestions - ris;
@@ -122,8 +122,39 @@ Chart.register({
     // Disegna il testo
     drawText(ctx, texts, textX, textY, maxWidth);
     ctx.restore(); // Ripristina lo stato precedente del contesto di rendering
+    if (percentageCorrect < 60) {
+      let audio1 = new Audio("../assets/media/golfclap.mp3");
+      audio1.play();
+      audio1.volume = 0.2;
+      console.log("Launching confetti!",);
+      const duration = 2 * 300;
+      const end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 7,
+          angle: 70, // Angle for the left side
+          spread: 60,
+          startVelocity: 90,
+          origin: { x: 0 }, // Start from the left
+        });
+        confetti({
+          particleCount: 7,
+          angle: 110, // Angle for the right side
+          spread: 60,
+          startVelocity: 90,
+          origin: { x: 1 }, // Start from the right
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }
   },
 });
+
+
 
 // Configurazione dei dati per il grafico
 const data = {

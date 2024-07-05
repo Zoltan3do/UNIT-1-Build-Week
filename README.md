@@ -44,6 +44,7 @@ HTML5: Per la struttura della pagina.
 CSS3: Per lo stile e il layout della pagina.
 JavaScript: Per la logica del quiz e l'interazione con l'utente.
 Chart.js: Per la creazione di grafici a ciambella che visualizzano i risultati del quiz.
+Canvas-confetti: Per la visualizzazione dei coriandoli in caso di superamento del test.
 
 
 ## Struttura del Progetto
@@ -135,6 +136,8 @@ Navigazione delle Domande: L'utente risponde alle domande e naviga tra di esse u
 
 Visualizzazione dei Risultati: Al termine del quiz, i risultati vengono visualizzati tramite un grafico a ciambella creato con Chart.js.
 
+Visualizzazione dei Coriandoli: Al termine del quiz, in caso di superamento, viene visualizzata l'animazione dei coriandoli creata con Canvas_confetti.
+
 
 
 ## Requisiti
@@ -156,9 +159,9 @@ Questa web app utilizza HTML, CSS, JavaScript e Chart.js per creare un'esperienz
 
 ## Progetto realizzato da
 
-Manuel Barone,
-Antonio Norfo,
-Pietro Romano,
-Andrea Iemma, 
-Sara Pavone,
+Manuel Barone
+Antonio Norfo
+Pietro Romano
+Andrea Iemma
+Sara Pavone
 Gianluca Cerreta.
