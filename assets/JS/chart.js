@@ -122,7 +122,7 @@ Chart.register({
     // Disegna il testo
     drawText(ctx, texts, textX, textY, maxWidth);
     ctx.restore(); // Ripristina lo stato precedente del contesto di rendering
-    if (percentageCorrect >= 60) {
+    if (percentageCorrect <= 50) {
       let audio1 = new Audio("../assets/media/golfclap.mp3");
       audio1.play();
       audio1.volume = 0.1;
