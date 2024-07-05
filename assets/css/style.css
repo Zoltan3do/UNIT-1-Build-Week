@@ -51,7 +51,6 @@ img {
 }
 
 /* Contenitore della lista e testo in grassetto */
-#container-lista,
 .bold {
   color: #e7e7eb;
   font-family: "Outfit", sans-serif;
@@ -168,7 +167,7 @@ svg {
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   transition: all 1s linear;
-  stroke: #00FFFF;
+  stroke: #00ffff;
   stroke-width: 15;
 }
 
@@ -204,7 +203,7 @@ svg {
 /* Titolo della seconda pagina */
 #titolo2 {
   margin-bottom: 50px;
-  font: 3rem "Outfit", helvetica, sans-serif;
+  font: 2rem "Outfit", helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -407,9 +406,9 @@ svg {
 
 /* Hover e selezione delle stelline */
 .container-stelline .star:hover,
-.container-stelline .star:hover~.star,
-.container-stelline input[type="checkbox"]:checked~label.star,
-.container-stelline input[type="checkbox"]:checked~label.star+input[type="checkbox"]~label.star {
+.container-stelline .star:hover ~ .star,
+.container-stelline input[type="checkbox"]:checked ~ label.star,
+.container-stelline input[type="checkbox"]:checked ~ label.star + input[type="checkbox"] ~ label.star {
   color: #00ffff;
 }
 
