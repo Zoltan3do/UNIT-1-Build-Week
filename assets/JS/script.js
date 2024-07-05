@@ -258,7 +258,7 @@ function changeQuestionNumber() {
 
 // timer
 function timerCountDown() {
-  let time = 30;
+  let time = 15;
   let initialOffset = 440;
   let i = 0;
 

@@ -74,7 +74,7 @@ Chart.register({
             ctx.fillStyle = "#d20094";
             break;
           case "wrongText2":
-            ctx.font = "lighter 1em Outfit";
+            ctx.font = "bold 1em Outfit";
             ctx.fillStyle = "white";
             break;
           case "wrongText3":
