@@ -262,41 +262,37 @@ function timerCountDown() {
   let initialOffset = 440;
   let i = 0;
 
-  // Seleziona tutti gli elementi con la classe "circle_animation" e applica lo stile
-  document.querySelectorAll('.circle_animation').forEach(element => {
-    element.style.strokeDashoffset = initialOffset - (1 * (initialOffset / time));
-  });
-
-  // Aggiorna il testo di tutti gli elementi h2
-  document.querySelectorAll('h2').forEach(element => {
-    element.textContent = time - i;
-  });
-
-  // Cancella il timer precedente se esiste
-  if (timerInterval) {
-    clearInterval(timerInterval);
-  }
-
-  timerInterval = setInterval(function () {
+  function updateTimer() {
     // Aggiorna il testo di tutti gli elementi h2
     document.querySelectorAll('h2').forEach(element => {
       element.textContent = time - i;
     });
-
-    if (i === time) {
-      clearInterval(timerInterval);
-      simulateButtonClick();
-      return;
-    }
 
     // Seleziona tutti gli elementi con la classe "circle_animation" e applica lo stile
     document.querySelectorAll('.circle_animation').forEach(element => {
       element.style.strokeDashoffset = initialOffset - ((i + 1) * (initialOffset / time));
     });
 
+    if (i === time) {
+      clearInterval(timerInterval);
+      simulateButtonClick();
+    }
+
     i++;
-  }, 1000);
+  }
+
+  // Esegui la prima iterazione immediatamente
+  updateTimer();
+
+  // Cancella il timer precedente se esiste
+  if (typeof timerInterval !== 'undefined') {
+    clearInterval(timerInterval);
+  }
+
+  // Imposta l'intervallo per le successive iterazioni
+  timerInterval = setInterval(updateTimer, 1000);
 }
+
 
 function buttonClickSelection() {
   if (domandePassate === domande.length - 1) {
