@@ -18,7 +18,7 @@ Chart.register({
     ];
 
     // Condizione per cambiare i testi
-    if (dataset[0] >= dataset[1]) {
+    if (dataset[0] > dataset[1]) {
       texts = [
         { text: "You failed the exam", sectionClass: "wrongText1" },
         { text: "Study more and try again.", sectionClass: "wrongText2" },

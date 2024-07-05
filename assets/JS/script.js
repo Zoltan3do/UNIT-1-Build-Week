@@ -221,7 +221,6 @@ invioRisposta.addEventListener("click", buttonClickSelection);
 function checkRispostaCorretta() {
   if (risposteCorrette.includes(rispostaCorrente)) {
     risposteCorretteDiUser.push(rispostaCorrente);
-    console.log(risposteCorretteDiUser.length);
     localStorage.setItem("corrette", risposteCorretteDiUser.length);
   }
 }
