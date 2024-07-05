@@ -18,7 +18,7 @@ Chart.register({
     ];
 
     // Condizione per cambiare i testi
-    if (dataset[0] > dataset[1]) {
+    if (dataset[0] >= dataset[1]) {
       texts = [
         { text: "You failed the exam", sectionClass: "wrongText1" },
         { text: "Study more and try again.", sectionClass: "wrongText2" },
@@ -122,7 +122,7 @@ Chart.register({
     // Disegna il testo
     drawText(ctx, texts, textX, textY, maxWidth);
     ctx.restore(); // Ripristina lo stato precedente del contesto di rendering
-    if (percentageCorrect < 60) {
+    if (percentageCorrect >= 60) {
       let audio1 = new Audio("../assets/media/golfclap.mp3");
       audio1.play();
       audio1.volume = 0.1;
