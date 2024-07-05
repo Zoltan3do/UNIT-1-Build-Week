@@ -125,7 +125,7 @@ Chart.register({
     if (percentageCorrect < 60) {
       let audio1 = new Audio("../assets/media/golfclap.mp3");
       audio1.play();
-      audio1.volume = 0.2;
+      audio1.volume = 0.1;
       console.log("Launching confetti!",);
       const duration = 2 * 300;
       const end = Date.now() + duration;
