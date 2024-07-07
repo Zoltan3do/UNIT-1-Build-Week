@@ -267,10 +267,10 @@ function timerCountDown() {
 
     // Seleziona tutti gli elementi con la classe "circle_animation" e applica lo stile
     document.querySelectorAll('.circle_animation').forEach(element => {
-      element.style.strokeDashoffset = initialOffset - ((i + 1) * (initialOffset / time));
+      element.style.strokeDashoffset = initialOffset - (i * (initialOffset / time));
     });
 
-    if (i === time) {
+    if (i - 1 === time) {
       clearInterval(timerInterval);
       simulateButtonClick();
     }
