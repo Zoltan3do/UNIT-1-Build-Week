@@ -102,11 +102,9 @@ const questions = [
 const domanda = document.getElementById("titolo2");
 const containerAnswers = document.getElementById("container-answers");
 const invioRisposta = document.getElementById("invio-risposta");
-
 const risposteCorrette = questions.map((item) => {
   return item.correct_answer;
 });
-
 const domande = questions.map((item) => {
   return item.question;
 });
